@@ -1,0 +1,21 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler node_modules/font-awesome/scss:node_modules/font-awesome/css style/scss:style/css",
+    "sass-min": "sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "2": "^2.0.0",
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Bootstrap 4 com NPM e Sass - Criando um site</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
+
+    <div class="container">
+      <a class="navbar-brand" h1 mb-0 href="#">Curso</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatos</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+              Social
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Facebook</a>
+              <a class="dropdown-item" href="#">Twitter</a>
+              <a class="dropdown-item" href="#">Instagram</a>
+            </div>
+          </li>
+        </ul>
+
+        <form class="form-inline">
+          <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+          <button class="btn btn-dark" type="submit">Ok</button>
+        </form>
+      </div>
+    </div>
+
+  </nav>
+
+  <div id="carouselSite" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselSite" data-slide-to="1"></li>
+      <li data-target="#carouselSite" data-slide-to="2"></li>
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/slide-01.jpg" class="img-fluid d-block">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, saepe neque autem maxime similique.</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/slide-02.jpg" class="img-fluid d-block">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, saepe neque autem maxime similique.</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/slide-03.jpg" class="img-fluid d-block">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, saepe neque autem maxime similique.</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">Avançar</span>
+    </a>
+
+  </div>
+
+  <div class="container">
+
+
+    <div class="row">
+
+      <div class="col-12 text-center my-5">
+
+        <h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i>Lorem ipsum dolor </h1>
+        <p>sit amet consectetur, adipisicing elit. Aliquid sint rerum vel, quas cumque molestiae hic
+          quod placeat tenetur ut iure inventore fugit, nihil accusamus magni veniam cupiditate eum aut.</p>
+      </div>
+    </div>
+    <div class="row mb-5">
+
+      <div class="col-sm-6 col-md-4 mb-3">
+
+        <nav id="navbarVertical" class="navbar navbar-light bg-ligth">
+
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item1">aaaa</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3" href="#item1-1">aaaa</a>
+              <a class="nav-link ml-3" href="#item1-2">aaaa</a>
+            </nav>
+
+            <a class="nav-link my-2" href="#item2">bbbb</a>
+
+            <a class="nav-link my-2" href="#item3">cccc</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3" href="#item3-1">cccc</a>
+              <a class="nav-link ml-3" href="#item3-2">cccc</a>
+            </nav>
+
+
+          </nav>
+        </nav>
+
+      </div>
+      <div class="col-sm-6 col-md-8 my-5">
+
+        <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+
+          <h4 id="item1">Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque magnam ex soluta, repudiandae odit tenetur
+            suscipit atque non voluptas ducimus quasi ab quibusdam porro recusandae dolor, consequuntur ipsa cum
+            voluptatum.</p>
+
+          <h5 id="item1-1">Lorem Epson</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint, illo in laboriosam dicta officiis quos
+            accusamus consectetur corporis tenetur reprehenderit voluptas magni obcaecati cumque nam veniam dolore
+            tempore error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iste ut dolor exercitationem,
+            excepturi culpa enim commodi cum id error distinctio aut dicta deserunt, perferendis possimus, rem inventore
+            tempora unde?</p>
+          <h5 id="item-1-2">Teste epson</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim quia maiores sunt at laboriosam?
+            Suscipit dolores Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente accusantium odio
+            delectus sequi eos doloribus, unde deserunt repudiandae suscipit nisi nam expedita quas rerum similique sit
+            amet non assumenda! blanditiis, delectus iste ea nisi reiciendis consequatur, vero, ipsum illo doloremque
+            qui voluptatibus?</p>
+
+          <h4 id="item2">Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque magnam ex soluta, repudiandae odit tenetur
+            suscipit atque non voluptas ducimus quasi ab quibusdam porro recusandae dolor, consequuntur ipsa cum
+            voluptatum.</p>
+
+          <h4 id="item3">Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque magnam ex soluta, repudiandae odit tenetur
+            suscipit atque non voluptas ducimus quasi ab quibusdam porro recusandae dolor, consequuntur ipsa cum
+            voluptatum.</p>
+
+          <h5 id="item3-1">Lorem Epson</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint, illo in laboriosam dicta officiis quos
+            accusamus consectetur corporis tenetur reprehenderit voluptas magni obcaecati cumque nam veniam dolore
+            tempore error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iste ut dolor exercitationem,
+            excepturi culpa enim commodi cum id error distinctio aut dicta deserunt, perferendis possimus, rem inventore
+            tempora unde?</p>
+          <h5 id="item3-2">Teste epson</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim quia maiores sunt at laboriosam?
+            Suscipit dolores Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente accusantium odio
+            delectus sequi eos doloribus, unde deserunt repudiandae suscipit nisi nam expedita quas rerum similique sit
+            amet non assumenda! blanditiis, delectus iste ea nisi reiciendis consequatur, vero, ipsum illo doloremque
+            qui voluptatibus?</p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-sm-center">
+
+      <div class="col-sm-6 col-md-4">
+
+        <div class="card mb-5">
+
+          <img class="card-img-top" src="image/slide-01.jpg">
+          <div class="card-body">
+            <h4 class="card-title">lorem lorem</h4>
+            <h6 class="card-subtitle mb-2 text-muted">lorem lorem lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ignissimos.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">a_00001</li>
+            <li class="list-group-item">a_00002</li>
+            <li class="list-group-item">a_00003</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">AAAAAA</a>
+            <a href="#" class="card-link">010101</a>
+          </div>
+          <div class="card-footer">
+            bbbbbbbbbbbb
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+
+        <div class="card mb-5">
+
+          <img class="card-img-top" src="image/slide-02.jpg">
+          <div class="card-body">
+            <h4 class="card-title">lorem lorem</h4>
+            <h6 class="card-subtitle mb-2 text-muted">lorem lorem lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ignissimos.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">a_00001</li>
+            <li class="list-group-item">a_00002</li>
+            <li class="list-group-item">a_00003</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">AAAAAA</a>
+            <a href="#" class="card-link">010101</a>
+          </div>
+          <div class="card-footer">
+            bbbbbbbbbbbb
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+
+        <div class="card mb-5">
+
+          <img class="card-img-top" src="image/slide-03.jpg">
+          <div class="card-body">
+            <h4 class="card-title">lorem lorem</h4>
+            <h6 class="card-subtitle mb-2 text-muted">lorem lorem lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ignissimos.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">a_00001</li>
+            <li class="list-group-item">a_00002</li>
+            <li class="list-group-item">a_00003</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">AAAAAA</a>
+            <a href="#" class="card-link">010101</a>
+          </div>
+          <div class="card-footer">
+            bbbbbbbbbbbb
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i>
+            point sertotdd</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo eaque pariatur tempora autem
+            nobis et deleniti perspiciatis assumenda. Quo ab nostrum perferendis eum. Vitae distinctio voluptas
+            similique dicta aliquam!</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-pills justify-content-center mb-5" id="pills-nav" role="tablist">
+
+            <li class="nav-itens">
+              <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Mortal Kombat 11 - Liu
+                Kang Klassic</a>
+            </li>
+
+            <li class="nav-itens">
+              <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Zerando Com SHAO KAHN</a>
+            </li>
+
+            <li class="nav-itens">
+              <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Mortal Kombat 11 - Zerando
+                Com ERRON BLACK</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content" id="nav-pills-content">
+
+            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+
+              <div class="row">
+                <div class="col-sm-6">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DZKfJ1zt9QA"></iframe>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <h6>Mortal Kombat 11 - Liu Kang Klassic Tower<br> (VERY HARD) NO MATCHES LOST</h6>
+
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quis ipsam maxime tempora
+                    nulla,
+                    quaerat culpa quibusdam vel reiciendis deserunt dolor distinctio nesciunt qui quod dolores neque
+                    odio
+                    optio minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, possimus quia nulla
+                    consequuntur numquam necessitatibus facilis laudantium voluptatem adipisci nesciunt tempora,
+                    magnam
+                    hic, enim aliquid voluptate autem qui sequi odit.lorem Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Illum voluptatibus veritatis impedit ab libero, velit a officia cum sed minus,
+                    omnis.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+
+              <div class="row">
+                <div class="col-sm-6">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iJjR1acsD0s"></iframe>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+
+                  <h6>Mortal Kombat 11<br>Zerando Com SHAO KAHN, o Melhor CHEFÃO</h6>
+
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quis ipsam maxime tempora
+                    nulla,
+                    quaerat culpa quibusdam vel reiciendis deserunt dolor distinctio nesciunt qui quod dolores neque
+                    odio
+                    optio minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, possimus quia nulla
+                    consequuntur numquam necessitatibus facilis laudantium voluptatem adipisci nesciunt tempora,
+                    magnam
+                    hic, enim aliquid voluptate autem qui sequi odit.lorem Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Illum voluptatibus veritatis impedit ab libero, velit a officia cum sed minus,
+                    omnis.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+
+              <div class="row">
+                <div class="col-sm-6">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T2FVqMzbF7c"></iframe>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <h6>Mortal Kombat 11 - Zerando Com ERRON BLACK no Hard<br> é o Personagem MAIS ROUBADO??</h6>
+
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quis ipsam maxime tempora
+                    nulla,
+                    quaerat culpa quibusdam vel reiciendis deserunt dolor distinctio nesciunt qui quod dolores neque
+                    odio
+                    optio minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, possimus quia nulla
+                    consequuntur numquam necessitatibus facilis laudantium voluptatem adipisci nesciunt tempora,
+                    magnam
+                    hic, enim aliquid voluptate autem qui sequi odit.lorem Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Illum voluptatibus veritatis impedit ab libero, velit a officia cum sed minus,
+                    omnis.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-12 text-center my-5">
+
+        <h1 class="diplay-4"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i>
+          Modelo Formulário - Preencher</h1>
+
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center mb-5">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        <form>
+          <div class="form-row">
+
+            <div class="form-group col-sm-6">
+              <label for="inputNome">Seu Nome</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+            </div>
+
+            <div class="form-group col-sm-6">
+              <label for="inputSobrenome">Seu sobrenome</label>
+              <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+            </div>
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-sm-12">
+              <label for="inputEnd">Seu endereço</label>
+              <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+            </div>
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-sm-6">
+              <label for="inputCidade">Seu cidade</label>
+              <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+            </div>
+
+            <div class="form-group col-sm-4">
+              <label for="inputEst">Seu estado</label>
+              <select id="inputEst" class="form-control">
+                <option selected>Escolha...</option>
+                <option>Brasília</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>João Pessoa</option>
+              </select>
+            </div>
+
+            <div class="form-group col-sm-2">
+              <label for="inputCep">Seu CEP</label>
+              <input type="text" id="inputCep" class="form-control">
+            </div>
+
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-sm-12">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox">Deseje receber novidades por e-mail
+                </label>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="form-row">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+
+              <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="rigth"
+                data-trigger="focus" title="Asdasd dasd asd"
+                data-content="dasdarasdgasdasdasasdasd dasdasd asd asd asd a">Ajuda</a>
+            </div>
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-12 mb-3">
+        <hr>
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Curso</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nihil fugiat labore incidunt! Repellendus
+          minima in blanditiis animi sint facilis iure eveniet corrupti, quas, ipsa earum accusantium esse quaerat
+          magni!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati fugit veniam qui in,
+          blanditiis
+          eligendi facere nulla minima libero sint, animi aliquam rerum error neque, voluptas suscipit? Veniam,
+          repellendus?</p>
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Menu</h3>
+        <div class="list-group text-center">
+          <a href="" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+          <a href="" class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+          <a href="" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+          <a href="" class="list-group-item list-group-item-action list-group-item-primary">Contatos</a>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-4">
+        <h3>Social</h3>
+        <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+          <a class="btn btn-outline-primary" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            Facebook</a>
+          <a class="btn btn-outline-info" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+          <a class="btn btn-outline-warning" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5">
+        <blockquote class="blocjquote text-center">
+          <p class="mb-0">
+            O sucesso não é garantido, mais o fracasso é certo se você não estiver emocionalmente envolvido em seu
+            trabalho.
+          </p>
+          <footer class="blockquote-footer">Biz Stone<circle title="Título">Fundador do Twitter</footer>
+        </blockquote>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+  <!--Modal-->
+
+  <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Teste modal</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <h5>Documento 01</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eaque qui eos, optio fuga
+                  necessitatibus voluptates. Explicabo, amet, qui similique neque est inventore hic nesciunt debitis
+                  repellat culpa accusantium? Consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae mollitia quasi id, illo velit quidem distinctio tenetur quia nihil quae enim saepe quis
+                  at
+                  adipisci. Dolores officia officiis reiciendis eligendi. Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Tempore voluptas animi deleniti, totam expedita quidem. Quaerat, minus? Eum
+                  perspiciatis fugit quisquam. Harum ipsam ratione tenetur, molestias ad cum magni possimus.</p>
+              </div>
+              <div class="col-6">
+                <h5>Documento 02</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eaque qui eos, optio fuga
+                  necessitatibus voluptates. Explicabo, amet, qui similique neque est inventore hic nesciunt debitis
+                  repellat culpa accusantium? Consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae mollitia quasi id, illo velit quidem distinctio tenetur quia nihil quae enim saepe quis
+                  at
+                  adipisci. Dolores officia officiis reiciendis eligendi. Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Tempore voluptas animi deleniti, totam expedita quidem. Quaerat, minus? Eum
+                  perspiciatis fugit quisquam. Harum ipsam ratione tenetur, molestias ad cum magni possimus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script>
+
+    $(function () {
+
+      $('[data-toggle="popover"]').popover()
+
+    })
+
+  </script>
+
+</body>
+
+</html>
